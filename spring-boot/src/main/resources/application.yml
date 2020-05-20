@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/case?&characterEncoding=utf8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  pattern:
+    console: "%d{yyyy‐MM‐dd} [%thread] ‐%5level %logger{50} ‐ %msg%n"
+  level:
+    com.thinkpad: error
